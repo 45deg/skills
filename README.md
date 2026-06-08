@@ -1,7 +1,6 @@
-# 45deg Skills
+# Skills
 
-Agent skills for 45deg workflows, packaged in the standard `skills/`
-repository layout.
+Agent skills
 
 ## Install
 
