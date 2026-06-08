@@ -1,13 +1,14 @@
-# UD Color Design
+# Apply UD Color Design
 
-Apply Color Universal Design and UD color principles to visual artifacts.
+Agent Skill for applying Color Universal Design (CUD) palette data and UD color-design checks to web, DTP, charts, maps, slides, signs, and other visual artifacts.
 
-Use this skill for:
+The skill focuses on practical use:
 
-- Web UI colors, design tokens, and state styles
-- Charts, maps, infographics, and slide visuals
-- Print and DTP palettes that need RGB/CMYK handling
-- Audits where information is communicated by color alone
+- choose screen RGB or print CMYK values by medium
+- select starter color sets for charts, maps, and signage
+- flag hard-to-distinguish color pairs
+- add redundant cues such as labels, icons, patterns, borders, line styles, and marker shapes
+- keep generated diagrams, swatches, and design outputs project-specific
 
 ## Contents
 
@@ -22,3 +23,9 @@ Use this skill for:
 ```bash
 npx skills add 45deg/skills --skill ud-color-design
 ```
+
+## Reference
+
+> 出典: 『カラーユニバーサルデザイン推奨配色セット ガイドブック』第２版  
+> 発行年: 2018年  
+> 発行者: カラーユニバーサルデザイン推奨配色セット制作委員会
