@@ -3,7 +3,7 @@ name: ud-color-design
 description: Apply Color Universal Design and UD color principles to web UI, charts, slides, print layouts, signs, maps, and DTP files. Use when asked to make colors easier to distinguish for diverse color vision, apply CUD/UD colors, create accessible palettes, revise diagrams that rely on color, choose RGB/CMYK values for screen or print, or audit visual information design for color-only communication risks.
 license: MIT
 metadata:
-  author: zkr
+  author: 45deg
   version: "1.0.0"
 ---
 
