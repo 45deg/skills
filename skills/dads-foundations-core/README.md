@@ -1,7 +1,4 @@
-# DADS Design System Skill
-
-> [!WARNING]
-> **This skill is deprecated.** Please use [dads-foundations-core](https://github.com/45deg/skills/tree/main/skills/dads-foundations-core) for design foundations guidance.
+# DADS Foundations Core Skill
 
 Local Agent Skill distilled from the Digital Agency Design System website.
 
@@ -16,17 +13,14 @@ License / reuse: Digital Agency Design System content is governed by the officia
 ## Contents
 
 - `SKILL.md`: agent routing and operating rules.
-- `references/foundations/*.md`: distilled foundation guidance.
-- `references/accessibility/*.md`: distilled accessibility constraints.
-- `references/components/*.md`: distilled component guidance.
-- `metadata.yaml`: source mapping and update timestamps.
+- `references/color_and_accessibility.md`: distilled color and accessibility guidance.
+- `references/icons_and_links.md`: distilled icons and links guidance.
+- `references/layout_and_spacing.md`: distilled layout and spacing guidance.
+- `references/typography_and_text_styles.md`: distilled typography and text styles guidance.
 
 ---
 
-# DADS Design System Skill（日本語）
-
-> [!WARNING]
-> **このSkillは非推奨（Deprecated）です。** デザインの基礎に関するガイダンスは、代わりに [dads-foundations-core](https://github.com/45deg/skills/tree/main/skills/dads-foundations-core) を使用してください。
+# DADS Foundations Core Skill（日本語）
 
 デジタル庁デザインシステムウェブサイトをもとに蒸留した、ローカルAgent Skillです。
 

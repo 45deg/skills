@@ -17,6 +17,10 @@ npx skills add 45deg/skills --skill ud-color-design
 ```
 
 ```bash
+npx skills add 45deg/skills --skill dads-foundations-core
+```
+
+```bash
 npx skills add 45deg/skills --skill dads-design-system
 ```
 
@@ -33,7 +37,19 @@ Use it for:
 - Print and DTP palettes that need RGB/CMYK handling
 - Audits where information is communicated by color alone
 
-### `dads-design-system`
+### `dads-foundations-core`
+
+Applies Japanese government style Digital Agency Design System (DADS) core design foundations (color, typography, layout, spacing, icons, links, and accessibility) when designing, reviewing, or implementing web UI.
+
+Use it for:
+
+- Design foundations such as color, typography, layout, spacing, icons, links, elevation, and corner shapes
+- Verification and audit of Japanese government-style web UI design decisions
+
+### `dads-design-system` (DEPRECATED)
+
+> [!WARNING]
+> This skill is deprecated. Please use `dads-foundations-core` for foundations guidance.
 
 Applies distilled guidance from the Digital Agency Design System website to Japanese government-style web UI decisions.
 
