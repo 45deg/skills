@@ -6,6 +6,11 @@
       "title": "Design",
       "description": "Skills for visual communication, accessibility, and artifact design.",
       "skills": ["ud-color-design", "dads-foundations-core", "dads-design-system"]
+    },
+    {
+      "title": "Writing",
+      "description": "Skills for editing, language quality, and clear communication.",
+      "skills": ["naturalize-japanese-prose"]
     }
   ]
 }

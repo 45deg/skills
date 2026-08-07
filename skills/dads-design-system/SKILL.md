@@ -1,6 +1,6 @@
 ---
 name: dads-design-system
-description: [DEPRECATED] (Use dads-foundations-core for foundations guidance instead) Apply the Digital Agency Design System design foundations, accessibility rules, and component decision guidance. Use when designing, reviewing, or implementing Japanese government-style web UI, choosing DADS components, checking color, typography, layout, spacing, icon, link, elevation, form, navigation, content, feedback, or data-display patterns, or auditing UI against DADS-oriented accessibility constraints.
+description: "[DEPRECATED] (Use dads-foundations-core for foundations guidance instead) Apply the Digital Agency Design System design foundations, accessibility rules, and component decision guidance. Use when designing, reviewing, or implementing Japanese government-style web UI, choosing DADS components, checking color, typography, layout, spacing, icon, link, elevation, form, navigation, content, feedback, or data-display patterns, or auditing UI against DADS-oriented accessibility constraints."
 license: Digital Agency Design System content is governed by the official usage notice and Digital Agency copyright policy; this skill is an edited/distilled derivative and is not official.
 compatibility: Requires only Markdown reading. No network or scripts required.
 ---

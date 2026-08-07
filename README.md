@@ -21,6 +21,10 @@ npx skills add 45deg/skills --skill dads-foundations-core
 ```
 
 ```bash
+npx skills add 45deg/skills --skill naturalize-japanese-prose
+```
+
+```bash
 npx skills add 45deg/skills --skill dads-design-system
 ```
 
@@ -36,6 +40,18 @@ Use it for:
 - Charts, maps, infographics, and slide visuals
 - Print and DTP palettes that need RGB/CMYK handling
 - Audits where information is communicated by color alone
+
+### `naturalize-japanese-prose`
+
+Revises AI-generated or AI-assisted Japanese while preserving meaning, facts, logical relations, stance, and claim strength.
+
+Use it for:
+
+- Diagnosing repetitive structures and excessive signposting
+- Removing redundant wording, vague abstractions, and mechanical connective patterns
+- Correcting unnecessary dramatic punctuation in titles and headings
+- Preserving terminology, qualifications, quotations, and genre-specific conventions
+- Checking rewrites for semantic additions or omissions
 
 ### `dads-foundations-core`
 
