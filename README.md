@@ -30,7 +30,22 @@ npx skills add 45deg/skills --skill dads-design-system
 npx skills add 45deg/skills --skill ud-color-design
 ```
 
+```bash
+npx skills add 45deg/skills --skill check-svg-diagrams
+```
+
 ### スキル
+
+#### `check-svg-diagrams`（unverified）
+
+利用可能なレンダラーやブラウザを使った目視確認と、Python CLIによる静的検査を組み合わせてSVG図をレビューします。
+
+次の用途に使用できます。
+
+- ラベルの重なり、はみ出し、クリッピング、位置ずれの確認
+- コネクター、矢印マーカー、関係方向の検査
+- 必須ラベル、ID、参照、安全でないマークアップの検証
+- フローチャート、構成図、ネットワーク図、UMLなどの納品前QA
 
 #### `naturalize-japanese-prose`
 
@@ -107,7 +122,22 @@ npx skills add 45deg/skills --skill dads-design-system
 npx skills add 45deg/skills --skill ud-color-design
 ```
 
+```bash
+npx skills add 45deg/skills --skill check-svg-diagrams
+```
+
 ### Skills
+
+#### `check-svg-diagrams` (unverified)
+
+Reviews SVG diagrams by combining visual inspection through an available renderer or browser with static checks from a Python CLI.
+
+Use it for:
+
+- Finding label collisions, overflow, clipping, and misalignment
+- Inspecting connectors, arrow markers, and relationship direction
+- Validating required labels, IDs, references, and unsafe markup
+- Pre-delivery QA for flowcharts, architecture diagrams, network diagrams, and UML
 
 #### `naturalize-japanese-prose`
 
