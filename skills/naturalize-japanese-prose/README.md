@@ -10,12 +10,15 @@ The skill focuses on practical editing:
 - remove unnecessary dramatic commas from titles and headings
 - preserve terminology, qualifications, quotations, and genre-specific conventions
 - audit the rewrite in both directions for semantic additions or omissions
+- evaluate naturalness, one-pass parseability, and audience comprehension as separate concerns
+- identify missing definitions, premises, comparison axes, and examples instead of hiding content gaps with smoother wording
 
 ## Contents
 
 - `SKILL.md`: Agent-facing workflow, preservation rules, and output modes
 - `references/analysis.md`: Detailed taxonomy of recurring prose patterns and editing guidance
 - `references/checklist.md`: Semantic-preservation and naturalness checks
+- `references/explanatory-prose.md`: Lightweight checks for whether tutorials and technical explanations provide the knowledge their intended readers need
 
 ## Install
 
