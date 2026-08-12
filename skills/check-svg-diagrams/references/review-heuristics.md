@@ -46,6 +46,7 @@ Use the passes that fit the SVG rather than treating this as a mandatory fixed s
 
 - Inspect the intended background, scale, viewport, and color scheme.
 - Check contrast, color-only distinctions, small text, and missing visual resources.
+- Evaluate contrast and color-only encoding as independent questions. For each meaningful distinction, list the available cues: explicit text or values, shape, pattern, icon, position, and line style. If any clear non-color cue preserves the distinction, do not call it color-only; still report insufficient foreground/background contrast when the cue itself is hard to read.
 - Try another renderer when fonts, filters, masks, markers, or symbols look suspicious.
 
 ## Require Appropriate Evidence

@@ -56,6 +56,7 @@ Use JSON for automation and tables for interactive review. Exit code `1` means o
 - Do not install software, download browser binaries, open a headed GUI, or exceed the current environment's permissions without the required user approval.
 - Do not report an approximate overlap as a confirmed visual defect without rendered evidence. Text width is estimated because the CLI does not load or shape fonts.
 - Ignore intentional containment, such as text inside a labeled box, unless text crosses the box boundary or another label.
+- Audit color-only encoding separately from contrast. First inventory every non-color cue already present—explicit text, value, shape, pattern, icon, position, or line style. Report color-only encoding only when the intended distinction would be lost without color; do not require an extra non-text cue when a clear label already distinguishes the states. A label can still fail contrast even when it prevents color-only encoding.
 - Prefer stable `id`, `data-role`, `data-source`, and `data-target` attributes when relating findings to diagram semantics.
 - Match required labels exactly after whitespace normalization. Do not silently translate, paraphrase, or infer missing content.
 - Prioritize blocking markup and reference errors, then label collisions and clipping, then connector direction and marker defects, then cosmetic spacing.
