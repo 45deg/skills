@@ -8,6 +8,8 @@ The skill focuses on practical editing:
 - replace vague abstractions and noun-heavy phrasing with clearer syntax
 - reduce mechanical connective patterns and uniform sentence rhythms
 - remove unnecessary dramatic commas from titles and headings
+- reduce clusters of generic significance claims, shallow analysis, vague attribution, promotional language, forced contrasts, and mechanical three-part lists without relying on a word blacklist
+- flag unsupported evaluations, causal claims, speculation, and broken source markers instead of polishing them into plausible prose
 - preserve terminology, qualifications, quotations, and genre-specific conventions
 - audit the rewrite in both directions for semantic additions or omissions
 - evaluate naturalness, one-pass parseability, and audience comprehension as separate concerns
@@ -17,6 +19,7 @@ The skill focuses on practical editing:
 
 - `SKILL.md`: Agent-facing workflow, preservation rules, and output modes
 - `references/analysis.md`: Detailed taxonomy of recurring prose patterns and editing guidance
+- `references/ai-writing-signals.md`: Japanese editing criteria adapted from Wikipedia's descriptive field guide to signs of AI writing
 - `references/checklist.md`: Semantic-preservation and naturalness checks
 - `references/explanatory-prose.md`: Lightweight checks for whether tutorials and technical explanations provide the knowledge their intended readers need
 
