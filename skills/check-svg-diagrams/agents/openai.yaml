@@ -1,0 +1,4 @@
+interface:
+  display_name: "Check SVG Diagrams"
+  short_description: "Render and inspect SVG diagrams for defects"
+  default_prompt: "Use $check-svg-diagrams to render and inspect this SVG, then report actionable defects."

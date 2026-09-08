@@ -9,7 +9,7 @@ Combine structural evidence with an actual rendered view. Keep renderer choice f
 
 ## Workflow
 
-1. Identify the SVG path and any explicit requirements: expected labels, stable IDs, or directed relationships.
+1. Identify the SVG path and any explicit requirements: expected labels, stable IDs, or directed relationships. Pass available requirements with `--required-label`, `--required-id`, or `--spec` in the first report; a report without requirements cannot detect omitted content from the specification. Compare requirements outside the CLI schema directly with the source and rendered view.
 2. Run the complete static inspection before opening the SVG in a browser or another active renderer:
 
    ```bash
@@ -19,7 +19,7 @@ Combine structural evidence with an actual rendered view. Keep renderer choice f
 3. Stop before visual rendering when the report contains unsafe markup or external references. Resolve or isolate those errors first.
 4. As the Coding Agent, inspect the current session's tools and the local environment for a viable SVG renderer, image viewer, browser workflow, or computer-use capability. Keep this discovery and orchestration outside `svg_check.py`.
 5. Render with any viable SVG-to-image tool or isolated browser workflow. Verify that an image was produced, inspect it at the intended delivery size, and try another renderer when fonts, filters, clipping, or external resources fail.
-6. Compare overlap, overflow, connector, and alignment warnings with the rendered view. Compare semantic relationships with the source specification or user intent.
+6. Reconcile the static report with the rendered view, including required-label and marker results, not only geometry warnings. The CLI does not resolve stylesheet rules or expand `<use>` instances; source text may also be clipped or covered. When a result depends on these features, verify the visible instance and relevant source before deciding whether the requirement failed. Compare semantic relationships with the source specification or user intent.
 7. Make the smallest SVG edit that fixes the confirmed defect. Preserve unrelated layout, content, styling, and identifiers.
 8. Rerun the relevant static command, render again, and inspect the corrected region. Summarize what was confirmed, changed, and rechecked.
 
@@ -41,8 +41,8 @@ Supply explicit requirements when available:
 
 ```bash
 python3 <skill-directory>/scripts/svg_check.py report diagram.svg \
-  --require-label "Payment approved" \
-  --require-id approval-arrow \
+  --required-label "Payment approved" \
+  --required-id approval-arrow \
   --spec requirements.json
 ```
 
@@ -72,4 +72,4 @@ For each actionable finding, include:
 - the smallest proposed correction;
 - the command or visual check used after the edit.
 
-Separate deterministic machine failures, likely visual defects, and semantic uncertainty. If the CLI reports no defect, state only that the static checks passed; do not claim pixel-perfect or semantic correctness.
+Separate deterministic machine failures, likely visual defects, and semantic uncertainty. Preserve the CLI result as evidence, but mark an unsupported-feature false positive as a checker limitation rather than an SVG defect. Conversely, label presence in the inventory does not prove it is visible in the final image. Keep CLI severity distinct from the review verdict: a machine warning can still violate an explicit requirement. For example, a missing top-level description is a required repair when the specification demands one, even though the CLI reports `missing_desc` as a warning. State the requirement that supports that verdict. If the CLI reports no defect, state only that the static checks passed; do not claim pixel-perfect or semantic correctness.
