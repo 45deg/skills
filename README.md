@@ -36,6 +36,18 @@ npx skills add 45deg/skills --skill check-svg-diagrams
 
 ### スキル
 
+#### `write-quality-tests`
+
+仕様とリスクに基づくテスト設計・実装と、生成テストのレビューを支援する英語のスキルです。期待値の根拠、境界条件、認可、途中失敗後の復旧、欠陥を検出できるかの確認を扱います。フロントエンド、バックエンド、DB、API契約、E2E、セキュリティ、性能・信頼性、データパイプラインの8つのサブスキルと、一次資料38件の出典・調査整理を同梱しています。
+
+```bash
+npx skills add 45deg/skills --skill write-quality-tests
+```
+
+サブスキルと共有資料を含むディレクトリ全体を使用してください。詳しくは [SKILL.md](skills/write-quality-tests/SKILL.md) を参照してください。
+
+テスト設計・レビューの判断を支援するガイドです。出典の研究はそれぞれの手法やツールを評価したもので、このスキルの使用による欠陥検出率の向上を保証するものではありません。
+
 #### `check-svg-diagrams`（unverified）
 
 利用可能なレンダラーやブラウザを使った目視確認と、Python CLIによる静的検査を組み合わせてSVG図をレビューします。
@@ -127,6 +139,18 @@ npx skills add 45deg/skills --skill check-svg-diagrams
 ```
 
 ### Skills
+
+#### `write-quality-tests`
+
+An English skill for risk-based test design, implementation, and review of generated tests. Covers grounded expectations, boundary cases, authorization, recovery after partial failure, and evidence of defect detection. It bundles eight subskills: frontend, backend, database, contracts, E2E, security, performance and reliability, and data pipelines. The research synthesis and source register cover 38 primary sources.
+
+```bash
+npx skills add 45deg/skills --skill write-quality-tests
+```
+
+Keep the entire bundle, including its subskills and shared references, together. Start with [SKILL.md](skills/write-quality-tests/SKILL.md); it routes to the relevant layers without loading every module.
+
+This is guidance for test-design and review decisions. The cited studies evaluate their own methods and tools; they do not establish a defect-detection advantage from using this skill.
 
 #### `check-svg-diagrams` (unverified)
 

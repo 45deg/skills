@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Quality Tests"
+  short_description: "Write tests that protect real product behavior"
+  default_prompt: "Use $write-quality-tests to inspect this repository and write risk-based tests with grounded expectations and verified failure detection."

@@ -3,6 +3,11 @@
   "notGrouped": "bottom",
   "groupings": [
     {
+      "title": "Software Testing",
+      "description": "Skills for risk-based test design, implementation, and review.",
+      "skills": ["write-quality-tests"]
+    },
+    {
       "title": "Design",
       "description": "Skills for visual communication, accessibility, and artifact design.",
       "skills": ["check-svg-diagrams", "ud-color-design", "dads-foundations-core", "dads-design-system"]
