@@ -1,0 +1,4 @@
+interface:
+  display_name: "Good Code"
+  short_description: "Make code changes clearer and easier to maintain"
+  default_prompt: "Use $good-code to improve the target code's clarity and maintainability while preserving behavior and checking the result."

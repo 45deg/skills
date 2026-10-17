@@ -3,6 +3,11 @@
   "notGrouped": "bottom",
   "groupings": [
     {
+      "title": "Code Quality",
+      "description": "Skills for improving code clarity, maintainability, and reviewability.",
+      "skills": ["good-code"]
+    },
+    {
       "title": "Software Testing",
       "description": "Skills for risk-based test design, implementation, and review.",
       "skills": ["write-quality-tests"]

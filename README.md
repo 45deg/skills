@@ -36,6 +36,16 @@ npx skills add 45deg/skills --skill check-svg-diagrams
 
 ### スキル
 
+#### `good-code`
+
+コードの実装・リファクタリング・レビューで、理解しやすさと保守性を改善する英語のスキルです。命名、条件分岐、状態、責務の分離、コメント、テスト、AI生成コードの過剰な複雑さを扱い、既存の動作とプロジェクトの規約を保ちます。
+
+```bash
+npx skills add 45deg/skills --skill good-code
+```
+
+[SKILL.md](skills/good-code/SKILL.md) に基本の判断手順を、[判断例](skills/good-code/references/decision-cases.md) に具体的なトレードオフをまとめています。
+
 #### `write-quality-tests`
 
 仕様とリスクに基づくテスト設計・実装と、生成テストのレビューを支援する英語のスキルです。期待値の根拠、境界条件、認可、途中失敗後の復旧、欠陥を検出できるかの確認を扱います。フロントエンド、バックエンド、DB、API契約、E2E、セキュリティ、性能・信頼性、データパイプラインの8つのサブスキルと、一次資料38件の出典・調査整理を同梱しています。
@@ -139,6 +149,16 @@ npx skills add 45deg/skills --skill check-svg-diagrams
 ```
 
 ### Skills
+
+#### `good-code`
+
+An English skill for improving code clarity and maintainability during implementation, refactoring, and review. Covers naming, branching, state, responsibility boundaries, comments, tests, and unnecessary complexity in AI-generated code while preserving existing behavior and project conventions.
+
+```bash
+npx skills add 45deg/skills --skill good-code
+```
+
+Start with [SKILL.md](skills/good-code/SKILL.md) for the decision workflow and [decision cases](skills/good-code/references/decision-cases.md) for concrete tradeoffs.
 
 #### `write-quality-tests`
 
