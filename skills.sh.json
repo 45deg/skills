@@ -9,8 +9,8 @@
     },
     {
       "title": "Software Testing",
-      "description": "Skills for risk-based test design, implementation, and review.",
-      "skills": ["write-quality-tests"]
+      "description": "Skills for testing software and verifying system models.",
+      "skills": ["write-quality-tests", "verify-with-quint", "verify-with-dafny"]
     },
     {
       "title": "Design",

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Verify with Dafny"
+  short_description: "Prove logic with Dafny and audit proof boundaries"
+  default_prompt: "Use $verify-with-dafny to verify this logic against its requirements and report checked properties and remaining assumptions."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Verify with Quint"
+  short_description: "Model existing code and check state-machine properties"
+  default_prompt: "Use $verify-with-quint to model the current code or protocol, check its properties, and trace counterexamples back to the source."

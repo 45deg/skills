@@ -46,6 +46,26 @@ npx skills add 45deg/skills --skill good-code
 
 [SKILL.md](skills/good-code/SKILL.md) に基本の判断手順を、[判断例](skills/good-code/references/decision-cases.md) に具体的なトレードオフをまとめています。
 
+#### `verify-with-dafny`
+
+Quint公式スキルの検証ワークフローを参考に、Dafnyでアルゴリズムや状態更新の正しさを検証する英語のスキルです。事前・事後条件、ループ不変条件、停止性、変更可能範囲、仮定や未検証部分の監査を扱います。Dafny公式スキルではありません。
+
+```bash
+npx skills add 45deg/skills --skill verify-with-dafny
+```
+
+[SKILL.md](skills/verify-with-dafny/SKILL.md) に検証手順を、[言語ガイド](skills/verify-with-dafny/references/language-guide.md) にDafnyの要点と公式リファレンスへのリンクをまとめています。
+
+#### `verify-with-quint`
+
+公式のQuintスキルを参考に、既存コード・プロトコル・状態遷移をモデル化して検証する英語のスキルです。ソースとの対応、原子性や障害の仮定、不変条件・到達可能性・活性、反例の調査、検証範囲の報告を扱います。モデル検査の成功と実装の正しさを区別します。
+
+```bash
+npx skills add 45deg/skills --skill verify-with-quint
+```
+
+詳しくは [SKILL.md](skills/verify-with-quint/SKILL.md) を参照してください。検証手順・公式出典・実行可能な競合例を同梱しています。
+
 #### `write-quality-tests`
 
 仕様とリスクに基づくテスト設計・実装と、生成テストのレビューを支援する英語のスキルです。期待値の根拠、境界条件、認可、途中失敗後の復旧、欠陥を検出できるかの確認を扱います。フロントエンド、バックエンド、DB、API契約、E2E、セキュリティ、性能・信頼性、データパイプラインの8つのサブスキルと、一次資料38件の出典・調査整理を同梱しています。
@@ -159,6 +179,26 @@ npx skills add 45deg/skills --skill good-code
 ```
 
 Start with [SKILL.md](skills/good-code/SKILL.md) for the decision workflow and [decision cases](skills/good-code/references/decision-cases.md) for concrete tradeoffs.
+
+#### `verify-with-dafny`
+
+An English skill for verifying algorithms and state updates with Dafny, informed by the official Quint modeling workflow. Covers contracts, loop invariants, termination, frames, and auditing assumptions and unverified boundaries. This is not an official Dafny skill.
+
+```bash
+npx skills add 45deg/skills --skill verify-with-dafny
+```
+
+See [SKILL.md](skills/verify-with-dafny/SKILL.md) for the workflow and [language guide](skills/verify-with-dafny/references/language-guide.md) for concise Dafny summaries and official reference links.
+
+#### `verify-with-quint`
+
+An English skill informed by the official Quint skills for modeling and verifying existing code, protocols, and state transitions. Covers source correspondence, atomicity and failure assumptions, safety, reachability, liveness, counterexample investigation, and scoped verification evidence. Distinguishes model-checking results from implementation correctness.
+
+```bash
+npx skills add 45deg/skills --skill verify-with-quint
+```
+
+Start with [SKILL.md](skills/verify-with-quint/SKILL.md). The bundle includes execution guidance, official sources, and a runnable race-condition example.
 
 #### `write-quality-tests`
 
