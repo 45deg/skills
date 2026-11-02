@@ -97,6 +97,29 @@ Validate at trust boundaries and rely on established invariants internally. Reas
 
 In SQL, name intermediate relations where useful and account for join multiplicity, NULL, and ordering guarantees; do not impose procedural execution order. In shell, preserve argument boundaries, quoting, and exit status. Verify concrete semantics against the target implementation.
 
+## Map the file before its implementation
+
+For a file that parses a supplied CSV string and returns validated records, an opening map could be:
+
+```text
+// Convert a supplied CSV string into validated import records; performs no writes.
+// parseImport: CSV string -> parseRows -> validateRows -> records or input error.
+// parseRows handles CSV syntax; validateRows checks required fields and types.
+```
+
+Use actual names and established behavior. The map identifies the file and its reading route; detailed validation rules belong beside the validator.
+
+For an `index.ts` that only exposes a public API:
+
+```text
+// Public entry point for imports. The entries below map exports to implementations.
+// parseImport: ./parse-import — parse and validate a supplied CSV string.
+// saveImport:  ./save-import  — persist validated records.
+// This file re-exports these operations; callers choose when to invoke them.
+```
+
+This is an export map, not a claim that importing the module parses or saves data. Inspect imported modules before claiming that loading the entry point has no side effects. For an executable entry point, map actual startup and delegation instead. Keep mandated headers and directives in their required positions.
+
 ## Explain purpose before mechanics
 
 Suppose a verified provider contract deduplicates retries only when they reuse the original key:

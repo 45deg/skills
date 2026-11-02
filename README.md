@@ -37,7 +37,7 @@ npx skills add 45deg/skills --skill ud-color-design
 
 #### `human-readable-code`
 
-新規実装・機能追加を中心に、言語を問わず人が意図を追いやすいコードを書くための英語スキルです。命名、データ表現、制御フロー、インターフェース、状態と失敗の扱いに加え、目的・前提を説明するコメントやASCII図表の使い方を扱います。
+新規実装や機能追加を中心に、言語を問わず、人が意図を追いやすいコードを書くための英語スキルです。命名、データ表現、制御フロー、インターフェース、状態、失敗の設計を扱います。あわせて、目的や前提を説明するコメント、ASCII図表、`index.*` を含むファイル冒頭の要約マップの書き方も説明します。
 
 ```bash
 npx skills add 45deg/skills --skill human-readable-code
@@ -45,9 +45,19 @@ npx skills add 45deg/skills --skill human-readable-code
 
 [SKILL.md](skills/human-readable-code/SKILL.md) に判断基準を、[具体例](skills/human-readable-code/references/howto.md) に実装時の選択肢を、[出典](skills/human-readable-code/references/sources.md) に参考資料と適用範囲をまとめています。
 
+#### `human-readable-code-ja`
+
+コードの構造、日本語コメント、ファイル冒頭の要約マップを一緒に設計する独立したスキルです。命名、データ表現、制御フロー、契約、状態、失敗の設計を扱い、仕様と実装を根拠にした日本語の説明を最初から書きます。ファイル冒頭の要約マップには役割と主な処理を示し、`index.*` などの入口では公開内容と実装先も案内します。
+
+```bash
+npx skills add 45deg/skills --skill human-readable-code-ja
+```
+
+[SKILL.md](skills/human-readable-code-ja/SKILL.md)、[日本語コメント](skills/human-readable-code-ja/references/japanese-comments.md)、[具体例](skills/human-readable-code-ja/references/examples.md) を参照してください。他のスキルを追加せずに単体で使えます。
+
 #### `good-code`
 
-コードの実装・リファクタリング・レビューで、理解しやすさと保守性を改善します。命名、条件分岐、状態、責務の分離、コメント、テスト、AI生成コードの過剰な複雑さを扱い、既存の動作とプロジェクトの規約を保ちます。
+コードの実装、リファクタリング、レビューにおいて、理解しやすさと保守性を改善します。既存の動作とプロジェクトの規約を保ちながら、命名、条件分岐、状態、責務の分離、コメント、テスト、AI生成コードの過剰な複雑さを扱います。
 
 ```bash
 npx skills add 45deg/skills --skill good-code
@@ -57,7 +67,7 @@ npx skills add 45deg/skills --skill good-code
 
 #### `verify-with-dafny`
 
-Quint公式スキルの検証ワークフローを参考に、Dafnyでアルゴリズムや状態更新の正しさを検証します。事前・事後条件、ループ不変条件、停止性、変更可能範囲、仮定や未検証部分の監査を扱います。Dafny公式スキルではありません。
+Quint公式スキルの検証ワークフローを参考に、Dafnyを使ってアルゴリズムや状態更新の正しさを検証します。事前条件と事後条件、ループ不変条件、停止性、変更可能範囲に加え、仮定や未検証部分の監査を扱います。Dafnyの公式スキルではありません。
 
 ```bash
 npx skills add 45deg/skills --skill verify-with-dafny
@@ -67,17 +77,17 @@ npx skills add 45deg/skills --skill verify-with-dafny
 
 #### `verify-with-quint`
 
-公式のQuintスキルを参考に、既存コード・プロトコル・状態遷移をモデル化して検証します。ソースとの対応、原子性や障害の仮定、不変条件・到達可能性・活性、反例の調査、検証範囲の報告を扱います。モデル検査の成功と実装の正しさを区別します。
+公式のQuintスキルを参考に、既存のコード、プロトコル、状態遷移をモデル化して検証します。ソースコードとの対応、原子性や障害の仮定、不変条件・到達可能性・活性の検証、反例の調査、検証範囲の報告を扱います。モデル検査の成功と実装の正しさを区別します。
 
 ```bash
 npx skills add 45deg/skills --skill verify-with-quint
 ```
 
-詳しくは [SKILL.md](skills/verify-with-quint/SKILL.md) を参照してください。検証手順・公式出典・実行可能な競合例を同梱しています。
+詳しくは [SKILL.md](skills/verify-with-quint/SKILL.md) を参照してください。検証手順、公式出典、実行可能な競合状態の例を同梱しています。
 
 #### `write-quality-tests`
 
-仕様とリスクに基づくテスト設計・実装と、生成テストのレビューを支援します。期待値の根拠、境界条件、認可、途中失敗後の復旧、欠陥を検出できるかの確認を扱います。フロントエンド、バックエンド、DB、API契約、E2E、セキュリティ、性能・信頼性、データパイプラインの8つのサブスキルと、一次資料38件の出典・調査整理を同梱しています。
+仕様とリスクに基づくテストの設計・実装と、生成されたテストのレビューを支援します。期待値の根拠、境界条件、認可、途中失敗後の復旧、欠陥を検出できるかの確認を扱います。フロントエンド、バックエンド、DB、API契約、E2E、セキュリティ、性能・信頼性、データパイプラインの8つのサブスキルと、一次資料38件の出典一覧および調査整理を同梱しています。
 
 ```bash
 npx skills add 45deg/skills --skill write-quality-tests
@@ -85,7 +95,7 @@ npx skills add 45deg/skills --skill write-quality-tests
 
 サブスキルと共有資料を含むディレクトリ全体を使用してください。詳しくは [SKILL.md](skills/write-quality-tests/SKILL.md) を参照してください。
 
-テスト設計・レビューの判断を支援するガイドです。出典の研究はそれぞれの手法やツールを評価したもので、このスキルの使用による欠陥検出率の向上を保証するものではありません。
+テストの設計とレビューの判断を支援するガイドです。引用した研究はそれぞれの手法やツールを評価したものであり、このスキルの使用によって欠陥検出率が向上することを保証するものではありません。
 
 #### `naturalize-japanese-prose`
 
@@ -95,13 +105,13 @@ AIが生成または補助した日本語を、意味、事実、論理関係、
 
 - 構成の繰り返しや過剰な道案内の診断
 - 重複した表現、曖昧な抽象表現、機械的な接続表現の整理
-- タイトルや見出しにある不要で演出的な句読点の修正
+- タイトルや見出しにある、演出目的の不要な読点の修正
 - 用語、限定表現、引用、ジャンル固有の慣習の保持
 - 書き直しによる意味の追加や欠落の確認
 
 #### `dads-foundations-core`
 
-日本の行政機関向けWeb UIを設計、レビュー、実装する際に、デジタル庁デザインシステム（DADS）のデザイン基盤（カラー、タイポグラフィ、レイアウト、余白、アイコン、リンク、アクセシビリティ）を適用します。
+日本の行政機関向けWeb UIを設計、レビュー、実装する際に、デジタル庁デザインシステム（DADS）のデザイン基盤を適用します。対象は、カラー、タイポグラフィ、レイアウト、余白、アイコン、リンク、アクセシビリティです。
 
 次の用途に使用できます。
 
@@ -169,13 +179,23 @@ npx skills add 45deg/skills --skill ud-color-design
 
 #### `human-readable-code`
 
-An English skill for writing human-readable code across languages, primarily during new implementation and feature development. Covers naming, data, control flow, interfaces, state, and failures, plus purpose and invariant comments and useful ASCII tables or diagrams.
+An English skill for writing human-readable code across languages, primarily during new implementation and feature development. Covers naming, data, control flow, interfaces, state, and failures, plus purpose and invariant comments, useful ASCII tables or diagrams, and opening summary maps for files including `index.*` entry points.
 
 ```bash
 npx skills add 45deg/skills --skill human-readable-code
 ```
 
 See [SKILL.md](skills/human-readable-code/SKILL.md) for decision guidance, [construction examples](skills/human-readable-code/references/howto.md) for tradeoffs, and [sources](skills/human-readable-code/references/sources.md) for provenance and applicability.
+
+#### `human-readable-code-ja`
+
+An independent skill for designing code structure, Japanese comments, and opening summary maps together. Covers naming, data representation, control flow, contracts, state, and failures, with explanations drafted directly from verified requirements and implementation. Opening maps identify file responsibilities and processing stages, including public responsibilities and implementation paths in `index.*` entry points.
+
+```bash
+npx skills add 45deg/skills --skill human-readable-code-ja
+```
+
+See [SKILL.md](skills/human-readable-code-ja/SKILL.md), [Japanese comments](skills/human-readable-code-ja/references/japanese-comments.md), and [examples](skills/human-readable-code-ja/references/examples.md). All guidance needed to use the skill is included in its own bundle.
 
 #### `good-code`
 
@@ -263,3 +283,9 @@ Use it for:
 - Charts, maps, infographics, and slide visuals
 - Print and DTP palettes that need RGB/CMYK handling
 - Audits where information is communicated by color alone
+
+## 参考文献 / References
+
+### 日本語の文章とコードコメント
+
+一般財団法人日本特許情報機構 特許情報研究所『特許ライティングマニュアル（第2版）「産業日本語」』、一般財団法人日本特許情報機構、2018年3月26日第2版第1刷発行、2019年3月22日第2版第2刷発行。

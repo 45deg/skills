@@ -79,6 +79,16 @@ Define partial effects and repeatability where relevant. Add transaction or retr
 
 Keep related declarations, calculations, and uses close. Separate meaningful stages with whitespace. Use consistent ordering and shapes for corresponding cases without changing evaluation dependencies. Follow project layout and formatters.
 
+## Put a summary map at the top of each file
+
+For each source file created or substantively edited, write or update a compact summary map at the top. A maintainer or LLM reading only the opening should understand the file's responsibility, the main processing or relationships, and where to read next. Start with a concrete purpose, then map the important stages to actual function names or module paths. Include consequential inputs, outputs, effects, or failure boundaries where they define the file's role. A simple file may need only a sentence and a short mapping; do not inventory every declaration or include line numbers that drift.
+
+Include `index.*` and analogous package, module, or application entry files even when they mainly re-export symbols or register components. Map public responsibilities to their implementation modules; for startup code, show initialization and delegation. Distinguish exports and registration from execution. Use arrows only with a clear meaning: data flow, call order, or dependency. Do not invent a sequential pipeline for independent handlers, declarative queries, or exports.
+
+Use native comments or module documentation in the earliest legal location. Preserve shebangs, encoding declarations, license headers, build directives, and other required leading constructs and their spacing; do not change directive or documentation semantics. Merge with an existing useful overview rather than adding a second one. For generated files, change the generator or template when in scope; for formats that cannot contain comments, use the nearest maintained documentation and identify the file it describes. Do not scan and rewrite unrelated files solely to add maps.
+
+Keep the opening focused on orientation; leave detailed contracts and invariants beside their implementation. Update the map whenever responsibilities, stages, exports, or delegation change. See the file and entry-point examples in [howto.md](references/howto.md).
+
 ## Write comments that orient the reader
 
 Use comments proactively to accelerate understanding, not only to preserve facts absent from code. For multi-stage or unfamiliar logic, give readers a brief map before the details and explain the purpose of important stages. A fact being derivable from code is not sufficient reason to omit a useful explanation.
@@ -104,7 +114,7 @@ Derive expected results independently from requirements. Select cases that disti
 
 Verify unfamiliar APIs against the version in use. Use project checks proportionate to impact. Do not suppress type errors or weaken assertions to obtain a pass. A low-risk edit does not justify a new test framework.
 
-Read the complete operation from its caller. Ask: what is this for, why are these steps ordered this way, and what becomes true between stages? Add an overview, purpose, invariant, or diagram where answering requires unnecessary tracing. Judge each explanation by the misunderstanding it prevents, not its length or presence. Confirm that meaning, decisions, effects, and failures remain traceable. Do not impose arbitrary limits on lines, parameters, nesting, or abstractions. Stop when further structure costs more understanding than it saves.
+Read the opening map alone: can you identify the file's role and locate the implementation without reading the whole body, including for `index.*` files? Check its names, paths, arrows, and guarantees against the implementation. Then read the complete operation from its caller. Ask: what is this for, why are these steps ordered this way, and what becomes true between stages? Add a purpose, invariant, or diagram where answering requires unnecessary tracing. Judge each explanation by the misunderstanding it prevents, not its length or presence. Confirm that meaning, decisions, effects, and failures remain traceable. Do not impose arbitrary limits on lines, parameters, nesting, or abstractions. Stop when further structure costs more understanding than it saves.
 
 ## References and scope
 

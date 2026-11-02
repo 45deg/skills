@@ -5,7 +5,7 @@
     {
       "title": "Code Quality",
       "description": "Skills for improving code clarity, maintainability, and reviewability.",
-      "skills": ["good-code", "human-readable-code"]
+      "skills": ["good-code", "human-readable-code", "human-readable-code-ja"]
     },
     {
       "title": "Software Testing",
