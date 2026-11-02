@@ -35,6 +35,16 @@ npx skills add 45deg/skills --skill ud-color-design
 
 ### スキル
 
+#### `human-readable-code`
+
+新規実装・機能追加を中心に、言語を問わず人が意図を追いやすいコードを書くための英語スキルです。命名、データ表現、制御フロー、インターフェース、状態と失敗の扱いに加え、目的・前提を説明するコメントやASCII図表の使い方を扱います。
+
+```bash
+npx skills add 45deg/skills --skill human-readable-code
+```
+
+[SKILL.md](skills/human-readable-code/SKILL.md) に判断基準を、[具体例](skills/human-readable-code/references/howto.md) に実装時の選択肢を、[出典](skills/human-readable-code/references/sources.md) に参考資料と適用範囲をまとめています。
+
 #### `good-code`
 
 コードの実装・リファクタリング・レビューで、理解しやすさと保守性を改善します。命名、条件分岐、状態、責務の分離、コメント、テスト、AI生成コードの過剰な複雑さを扱い、既存の動作とプロジェクトの規約を保ちます。
@@ -156,6 +166,16 @@ npx skills add 45deg/skills --skill ud-color-design
 ```
 
 ### Skills
+
+#### `human-readable-code`
+
+An English skill for writing human-readable code across languages, primarily during new implementation and feature development. Covers naming, data, control flow, interfaces, state, and failures, plus purpose and invariant comments and useful ASCII tables or diagrams.
+
+```bash
+npx skills add 45deg/skills --skill human-readable-code
+```
+
+See [SKILL.md](skills/human-readable-code/SKILL.md) for decision guidance, [construction examples](skills/human-readable-code/references/howto.md) for tradeoffs, and [sources](skills/human-readable-code/references/sources.md) for provenance and applicability.
 
 #### `good-code`
 
