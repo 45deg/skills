@@ -31,6 +31,11 @@ npx skills add 45deg/skills --skill ud-color-design
 ```
 
 ```bash
+npx skills add 45deg/skills --skill human-readable-code
+```
+
+```bash
+npx skills add 45deg/skills --skill human-readable-code-ja
 ```
 
 ### スキル
@@ -173,6 +178,11 @@ npx skills add 45deg/skills --skill ud-color-design
 ```
 
 ```bash
+npx skills add 45deg/skills --skill human-readable-code
+```
+
+```bash
+npx skills add 45deg/skills --skill human-readable-code-ja
 ```
 
 ### Skills
