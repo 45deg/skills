@@ -118,6 +118,6 @@ Read the opening map alone: can you identify the file's role and locate the impl
 
 ## References and scope
 
-Read [howto.md](references/howto.md) only for a matching design tradeoff or example. Read [sources.md](references/sources.md) for provenance and applicability. No other skill or routine web lookup is required.
+Read [howto.md](references/howto.md) only for a matching design tradeoff or example. Read [sources.md](references/sources.md) for reference materials. Routine web lookup is not required.
 
 For existing code, preserve public contracts and unrelated user changes. Review requests authorize findings, not unsolicited edits; separate defects and material comprehension risks from preferences. Report the result, checks actually performed, and consequential gaps.

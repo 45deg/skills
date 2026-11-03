@@ -127,6 +127,6 @@ description: 日本語で意図を説明しながら、人が読み解きやす�
 
 ## 参照と適用範囲
 
-設計や説明の具体例が必要なら [references/examples.md](references/examples.md)、出典と転用範囲は [references/sources.md](references/sources.md) を読む。他のスキルのインストールや毎回のWeb検索は不要。
+設計や説明の具体例が必要なら [references/examples.md](references/examples.md)、参考資料は [references/sources.md](references/sources.md) を読む。毎回のWeb検索は不要。
 
 既存のコードを変更するときは、公開されている契約と、今回の依頼に無関係な既存の実装や変更を保つ。レビューを求められた場合は指摘事項を返し、依頼されていないファイル編集は行わない。不具合や読解上の重大な支障と、単なる好みの違いを区別して扱う。作業後は、変更内容、実施した確認、残っている制約を報告する。
