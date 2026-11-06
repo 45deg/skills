@@ -23,10 +23,6 @@ npx skills add 45deg/skills --skill dads-foundations-core
 ```
 
 ```bash
-npx skills add 45deg/skills --skill dads-design-system
-```
-
-```bash
 npx skills add 45deg/skills --skill ud-color-design
 ```
 
@@ -42,33 +38,23 @@ npx skills add 45deg/skills --skill human-readable-code-ja
 
 #### `human-readable-code`
 
-新規実装や機能追加を中心に、言語を問わず、人が意図を追いやすいコードを書くための英語スキルです。命名、データ表現、制御フロー、インターフェース、状態、失敗の設計を扱います。あわせて、目的や前提を説明するコメント、ASCII図表、`index.*` を含むファイル冒頭の要約マップの書き方も説明します。
+新規実装、機能追加、リファクタリング、レビューで、言語を問わず、人が意図を追いやすいコードを書く・改善するための英語スキルです。命名、データ表現、制御フロー、インターフェース、状態、失敗の設計を扱います。あわせて、目的や前提を説明するコメント、ASCII図表、`index.*` を含むファイル冒頭の要約マップの書き方も説明します。
 
 ```bash
 npx skills add 45deg/skills --skill human-readable-code
 ```
 
-[SKILL.md](skills/human-readable-code/SKILL.md) に判断基準を、[具体例](skills/human-readable-code/references/howto.md) に実装時の選択肢を、[出典](skills/human-readable-code/references/sources.md) に参考資料と適用範囲をまとめています。
+[SKILL.md](skills/human-readable-code/SKILL.md) に判断基準を、[具体例](skills/human-readable-code/references/howto.md) に実装時の選択肢を、[レビュー・リファクタリング](skills/human-readable-code/references/review-and-refactoring.md) に動作を保つための確認点を、[出典](skills/human-readable-code/references/sources.md) に参考資料と適用範囲をまとめています。
 
 #### `human-readable-code-ja`
 
-コードの構造、日本語コメント、ファイル冒頭の要約マップを一緒に設計する独立したスキルです。命名、データ表現、制御フロー、契約、状態、失敗の設計を扱い、仕様と実装を根拠にした日本語の説明を最初から書きます。ファイル冒頭の要約マップには役割と主な処理を示し、`index.*` などの入口では公開内容と実装先も案内します。
+コードの構造、日本語コメント、ファイル冒頭の要約マップを一緒に設計する独立したスキルです。実装、リファクタリング、レビューにおいて、命名、データ表現、制御フロー、契約、状態、失敗を扱い、仕様と実装を根拠にした日本語の説明を最初から書きます。ファイル冒頭の要約マップには役割と主な処理を示し、`index.*` などの入口では公開内容と実装先も案内します。
 
 ```bash
 npx skills add 45deg/skills --skill human-readable-code-ja
 ```
 
-[SKILL.md](skills/human-readable-code-ja/SKILL.md)、[日本語コメント](skills/human-readable-code-ja/references/japanese-comments.md)、[具体例](skills/human-readable-code-ja/references/examples.md) を参照してください。他のスキルを追加せずに単体で使えます。
-
-#### `good-code`
-
-コードの実装、リファクタリング、レビューにおいて、理解しやすさと保守性を改善します。既存の動作とプロジェクトの規約を保ちながら、命名、条件分岐、状態、責務の分離、コメント、テスト、AI生成コードの過剰な複雑さを扱います。
-
-```bash
-npx skills add 45deg/skills --skill good-code
-```
-
-[SKILL.md](skills/good-code/SKILL.md) に基本の判断手順を、[判断例](skills/good-code/references/decision-cases.md) に具体的なトレードオフをまとめています。
+[SKILL.md](skills/human-readable-code-ja/SKILL.md)、[日本語コメント](skills/human-readable-code-ja/references/japanese-comments.md)、[具体例](skills/human-readable-code-ja/references/examples.md)、[レビュー・リファクタリング](skills/human-readable-code-ja/references/review-and-refactoring.md) を参照してください。他のスキルを追加せずに単体で使えます。
 
 #### `verify-with-dafny`
 
@@ -123,19 +109,6 @@ AIが生成または補助した日本語を、意味、事実、論理関係、
 - カラー、タイポグラフィ、レイアウト、余白、アイコン、リンク、エレベーション、角の形状などのデザイン基盤
 - 日本の行政機関向けWeb UIにおけるデザイン判断の検証と監査
 
-#### `dads-design-system`（非推奨）
-
-> [!WARNING]
-> このスキルは非推奨です。デザイン基盤のガイダンスには `dads-foundations-core` を使用してください。
-
-デジタル庁デザインシステムのWebサイトから抽出したガイダンスを、日本の行政機関向けWeb UIの設計判断に適用します。
-
-次の用途に使用できます。
-
-- カラー、タイポグラフィ、レイアウト、余白、アイコン、リンク、エレベーション、角の形状などのデザイン基盤
-- フォーム、ナビゲーション、フィードバック、コンテンツ、データ表示のパターンに応じたコンポーネントの選択
-- DADSに沿った実装やレビューにおけるアクセシビリティの確認
-
 #### `ud-color-design`
 
 カラーユニバーサルデザインとUDカラーの原則をビジュアル制作物に適用します。
@@ -170,10 +143,6 @@ npx skills add 45deg/skills --skill dads-foundations-core
 ```
 
 ```bash
-npx skills add 45deg/skills --skill dads-design-system
-```
-
-```bash
 npx skills add 45deg/skills --skill ud-color-design
 ```
 
@@ -189,33 +158,23 @@ npx skills add 45deg/skills --skill human-readable-code-ja
 
 #### `human-readable-code`
 
-An English skill for writing human-readable code across languages, primarily during new implementation and feature development. Covers naming, data, control flow, interfaces, state, and failures, plus purpose and invariant comments, useful ASCII tables or diagrams, and opening summary maps for files including `index.*` entry points.
+An English skill for writing and improving human-readable code across languages during implementation, feature development, refactoring, and review. Covers naming, data, control flow, interfaces, state, and failures, plus purpose and invariant comments, useful ASCII tables or diagrams, and opening summary maps for files including `index.*` entry points.
 
 ```bash
 npx skills add 45deg/skills --skill human-readable-code
 ```
 
-See [SKILL.md](skills/human-readable-code/SKILL.md) for decision guidance, [construction examples](skills/human-readable-code/references/howto.md) for tradeoffs, and [sources](skills/human-readable-code/references/sources.md) for provenance and applicability.
+See [SKILL.md](skills/human-readable-code/SKILL.md) for decision guidance, [construction examples](skills/human-readable-code/references/howto.md) for tradeoffs, [review and refactoring cases](skills/human-readable-code/references/review-and-refactoring.md) for behavior-preserving changes, and [sources](skills/human-readable-code/references/sources.md) for provenance and applicability.
 
 #### `human-readable-code-ja`
 
-An independent skill for designing code structure, Japanese comments, and opening summary maps together. Covers naming, data representation, control flow, contracts, state, and failures, with explanations drafted directly from verified requirements and implementation. Opening maps identify file responsibilities and processing stages, including public responsibilities and implementation paths in `index.*` entry points.
+An independent skill for designing code structure, Japanese comments, and opening summary maps together. Covers implementation, refactoring, and review of naming, data representation, control flow, contracts, state, and failures, with explanations drafted directly from verified requirements and implementation. Opening maps identify file responsibilities and processing stages, including public responsibilities and implementation paths in `index.*` entry points.
 
 ```bash
 npx skills add 45deg/skills --skill human-readable-code-ja
 ```
 
-See [SKILL.md](skills/human-readable-code-ja/SKILL.md), [Japanese comments](skills/human-readable-code-ja/references/japanese-comments.md), and [examples](skills/human-readable-code-ja/references/examples.md). All guidance needed to use the skill is included in its own bundle.
-
-#### `good-code`
-
-An English skill for improving code clarity and maintainability during implementation, refactoring, and review. Covers naming, branching, state, responsibility boundaries, comments, tests, and unnecessary complexity in AI-generated code while preserving existing behavior and project conventions.
-
-```bash
-npx skills add 45deg/skills --skill good-code
-```
-
-Start with [SKILL.md](skills/good-code/SKILL.md) for the decision workflow and [decision cases](skills/good-code/references/decision-cases.md) for concrete tradeoffs.
+See [SKILL.md](skills/human-readable-code-ja/SKILL.md), [Japanese comments](skills/human-readable-code-ja/references/japanese-comments.md), [examples](skills/human-readable-code-ja/references/examples.md), and [review and refactoring cases](skills/human-readable-code-ja/references/review-and-refactoring.md). All guidance needed to use the skill is included in its own bundle.
 
 #### `verify-with-dafny`
 
@@ -269,19 +228,6 @@ Use it for:
 
 - Design foundations such as color, typography, layout, spacing, icons, links, elevation, and corner shapes
 - Verification and audit of Japanese government-style web UI design decisions
-
-#### `dads-design-system` (DEPRECATED)
-
-> [!WARNING]
-> This skill is deprecated. Please use `dads-foundations-core` for foundations guidance.
-
-Applies distilled guidance from the Digital Agency Design System website to Japanese government-style web UI decisions.
-
-Use it for:
-
-- Design foundations such as color, typography, layout, spacing, icons, links, elevation, and corner shapes
-- Component choice for forms, navigation, feedback, content, and data-display patterns
-- Accessibility checks for DADS-oriented implementation and review work
 
 #### `ud-color-design`
 

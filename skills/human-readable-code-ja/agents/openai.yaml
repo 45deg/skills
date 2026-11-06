@@ -1,4 +1,4 @@
 interface:
   display_name: "コード設計と日本語コメント"
-  short_description: "読み解きやすいコードと、日本語コメント・冒頭の要約マップを書く"
+  short_description: "コードと日本語コメント・冒頭の要約マップを設計・改善・レビューする"
   default_prompt: "$human-readable-code-ja を使い、この機能を読み解きやすいコードで実装し、日本語コメントとファイル冒頭の要約マップを付けてください。"

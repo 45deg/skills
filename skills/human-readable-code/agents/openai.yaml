@@ -1,4 +1,4 @@
 interface:
   display_name: "Human Readable Code"
-  short_description: "Write clear, idiomatic code across languages"
+  short_description: "Write and review clear, idiomatic code across languages"
   default_prompt: "Use $human-readable-code to implement this feature with clear names, data flow, and interfaces."

@@ -1,6 +1,6 @@
 ---
 name: human-readable-code
-description: Write human-readable code across languages, primarily for new implementations and feature additions. Use when choosing names, data representations, expressions, control flow, interfaces, state, errors, comments, and tests. Also applies to targeted improvements; not for formatting-only work or architecture-wide redesign.
+description: Write and improve human-readable code across languages during implementation, targeted refactoring, and review. Use when choosing or assessing names, data representations, control flow, interfaces, state, errors, comments, and tests. Not for formatting-only changes or architecture-wide redesign.
 ---
 
 # Human Readable Code
@@ -108,6 +108,14 @@ Use clear names and structure together with helpful explanations. A short overvi
 
 Update comments, tables, and diagrams with the implementation. If code and prose disagree, establish the intended contract before changing either. Remove obsolete explanations; preserve still-relevant constraints.
 
+## Review and refactor existing code
+
+Read the complete affected operation and its callers as well as the diff. Identify the behavior and comprehension problem before choosing a change. When names or layout solve it, leave the structure alone. Compare the burden on callers with the navigation and contracts introduced by a helper; a single caller can justify extraction, but forwarding alone does not.
+
+For changes spanning responsibilities, trace one concrete change through callers, state, configuration, and tests. Check whether pieces that must change together have visible relationships and whether independent policies are unnecessarily coupled. Look for an evidenced common cause behind related symptoms before deciding whether to fix them separately or together. Use dependency paths and available Git history to test the hypothesis; record affected locations, evidence, the proposed responsibility boundary, and behavior to preserve. Keep investigation and fixes within the requested scope.
+
+Check public names, serialized fields, configuration, and dynamic registrations before removing or renaming apparently unused code. Preserve evaluation timing and guarded effects when simplifying expressions. Read [review and refactoring cases](references/review-and-refactoring.md) when changes cross responsibility boundaries or affect these contracts, test helpers, performance, or asynchronous work.
+
 ## Verify and finish
 
 Derive expected results independently from requirements. Select cases that distinguish plausible mistakes, including relevant boundaries, duplicates, absence, and failure. Keep setup, action, and expectation visible; do not copy production logic into expected-value calculations.
@@ -120,4 +128,4 @@ Read the opening map alone: can you identify the file's role and locate the impl
 
 Read [howto.md](references/howto.md) only for a matching design tradeoff or example. Read [sources.md](references/sources.md) for reference materials. Routine web lookup is not required.
 
-For existing code, preserve public contracts and unrelated user changes. Review requests authorize findings, not unsolicited edits; separate defects and material comprehension risks from preferences. Report the result, checks actually performed, and consequential gaps.
+For existing code, preserve public contracts and unrelated user changes. Review requests authorize findings, not unsolicited edits. Tie each finding to its location, triggering condition or maintenance problem, and consequence; separate defects and material comprehension risks from preferences. Mark uncertainty and report no findings when none are supported. For implementation or refactoring, report the resulting behavior or maintenance benefit, checks actually performed, and consequential gaps.

@@ -7,3 +7,4 @@
 - [Google: What to look for in a code review](https://google.github.io/eng-practices/review/reviewer/looking-for.html): simplicity, readable tests, comments, and API documentation.
 - [Fowler: Decompose Conditional](https://refactoring.com/catalog/decomposeConditional.html): naming meaningful conditions and calculations.
 - [Fowler: Replace Nested Conditional with Guard Clauses](https://refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html): handling independent special cases early.
+- [CaldoAI: untangle-codebase](https://github.com/caldoai/skills/blob/main/skills/untangle-codebase/SKILL.md): selected ideas adapted for targeted review and refactoring: change relationships, common-cause diagnosis, dependency and Git-history evidence, and decision records.
