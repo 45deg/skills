@@ -34,6 +34,10 @@ npx skills add 45deg/skills --skill human-readable-code
 npx skills add 45deg/skills --skill human-readable-code-ja
 ```
 
+```bash
+npx skills add 45deg/skills --skill design-clear-ui
+```
+
 ### スキル
 
 #### `human-readable-code`
@@ -100,6 +104,14 @@ AIが生成または補助した日本語を、意味、事実、論理関係、
 - 用語、限定表現、引用、ジャンル固有の慣習の保持
 - 書き直しによる意味の追加や欠落の確認
 
+#### `design-clear-ui`
+
+WebやアプリのUIを設計・レビュー・改善し、利用者が覚えること、探すこと、読み直すこと、判断することを減らすための英語スキルです。操作の流れ、選択肢の示し方、UI文言、フィードバック、中断後の再開を扱います。既存のデザインシステムとアクセシビリティを保ち、必要な情報や操作が実際に使う場面で揃っているかを確認します。
+
+```bash
+npx skills add 45deg/skills --skill design-clear-ui
+```
+
 #### `dads-foundations-core`
 
 日本の行政機関向けWeb UIを設計、レビュー、実装する際に、デジタル庁デザインシステム（DADS）のデザイン基盤を適用します。対象は、カラー、タイポグラフィ、レイアウト、余白、アイコン、リンク、アクセシビリティです。
@@ -152,6 +164,10 @@ npx skills add 45deg/skills --skill human-readable-code
 
 ```bash
 npx skills add 45deg/skills --skill human-readable-code-ja
+```
+
+```bash
+npx skills add 45deg/skills --skill design-clear-ui
 ```
 
 ### Skills
@@ -219,6 +235,14 @@ Use it for:
 - Correcting unnecessary dramatic punctuation in titles and headings
 - Preserving terminology, qualifications, quotations, and genre-specific conventions
 - Checking rewrites for semantic additions or omissions
+
+#### `design-clear-ui`
+
+An English skill for designing, reviewing, and improving web and app UI to reduce memory, attention, reading, and decision demands. Covers task flows, choices, UI copy, feedback, and recovery after interruption. Preserves existing design systems and accessibility, and checks whether needed information and actions are available where people use them.
+
+```bash
+npx skills add 45deg/skills --skill design-clear-ui
+```
 
 #### `dads-foundations-core`
 
