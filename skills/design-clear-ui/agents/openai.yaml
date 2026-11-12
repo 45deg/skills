@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Clear UI"
+  short_description: "Reduce memory, attention, and decision demands in UI"
+  default_prompt: "Use $design-clear-ui to identify what this task requires people to remember, find, read, and decide, then improve the UI within scope and verify those needs in use."
