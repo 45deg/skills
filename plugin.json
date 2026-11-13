@@ -1,0 +1,8 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "45deg-skills",
+  "version": "0.1.0",
+  "description": "Skills for code readability, software testing, formal verification, UI design, and Japanese prose editing.",
+  "author": { "name": "45deg" },
+  "repository": "https://github.com/45deg/skills"
+}

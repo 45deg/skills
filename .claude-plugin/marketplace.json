@@ -1,0 +1,11 @@
+{
+  "name": "45deg-marketplace",
+  "owner": { "name": "45deg" },
+  "plugins": [
+    {
+      "name": "45deg-skills",
+      "source": ".",
+      "description": "Skills for code readability, software testing, formal verification, UI design, and Japanese prose editing."
+    }
+  ]
+}
