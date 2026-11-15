@@ -19,6 +19,7 @@ AIエージェント向けのスキル集です。コードの可読性・テス
 | [`dads-foundations-core`](#dads-foundations-core) | UI設計 | デジタル庁デザインシステム（DADS）基盤の適用・監査 | 英語 |
 | [`ud-color-design`](#ud-color-design) | カラー設計 | カラーユニバーサルデザイン（CUD）配色と視認性チェック | 英語 |
 | [`naturalize-japanese-prose`](#naturalize-japanese-prose) | 日本語文章 | 意味や主張の強さを保ったままAI由来の日本語を自然化 | 日本語 |
+| [`slop-copy-detector`](#slop-copy-detector) | 日本語文章 | キャッチコピー・見出し・タイトルを掲載位置と文脈に沿って診断 | 日本語 |
 
 ### インストール
 
@@ -172,6 +173,17 @@ npx skills add 45deg/skills --skill naturalize-japanese-prose
 - [チェックリスト](skills/naturalize-japanese-prose/references/checklist.md): 意味保存と自然さの検査項目
 - [解説文の検査](skills/naturalize-japanese-prose/references/explanatory-prose.md): 入門・技術解説向けの理解条件チェック
 
+##### `slop-copy-detector`
+
+日本語のキャッチコピー・見出し・タイトルを診断します。掲載位置と前後の文面を読み、言い回しが読者に何を伝えるかを確かめます。
+
+```bash
+npx skills add 45deg/skills --skill slop-copy-detector
+```
+
+- [SKILL.md](skills/slop-copy-detector/SKILL.md)（判定ルールと例）
+- [detect_slop.py](skills/slop-copy-detector/scripts/detect_slop.py)（句読点・文字数・候補順・重複の集計）
+
 ---
 
 ## English
@@ -189,6 +201,7 @@ npx skills add 45deg/skills --skill naturalize-japanese-prose
 | [`dads-foundations-core`](#dads-foundations-core-1) | UI Design | Apply and audit Digital Agency Design System (DADS) foundations | English |
 | [`ud-color-design`](#ud-color-design-1) | Color Design | Apply Color Universal Design (CUD) palettes and redundant cues | English |
 | [`naturalize-japanese-prose`](#naturalize-japanese-prose-1) | Japanese Prose | Revise AI-assisted Japanese while preserving meaning and stance | Japanese |
+| [`slop-copy-detector`](#slop-copy-detector-1) | Japanese Prose | Assess Japanese catchphrases, headings, and titles in context | Japanese |
 
 ### Install
 
@@ -341,6 +354,17 @@ npx skills add 45deg/skills --skill naturalize-japanese-prose
 - [AI writing signals](skills/naturalize-japanese-prose/references/ai-writing-signals.md): Japanese editing criteria
 - [Checklist](skills/naturalize-japanese-prose/references/checklist.md): Semantic-preservation and naturalness checks
 - [Explanatory prose](skills/naturalize-japanese-prose/references/explanatory-prose.md): Comprehension checks for tutorials and technical explanations
+
+##### `slop-copy-detector`
+
+Reviews Japanese catchphrases, headings, and titles in context. It considers where the copy appears and what the wording helps the reader understand.
+
+```bash
+npx skills add 45deg/skills --skill slop-copy-detector
+```
+
+- [SKILL.md](skills/slop-copy-detector/SKILL.md) for review criteria and examples
+- [detect_slop.py](skills/slop-copy-detector/scripts/detect_slop.py) for punctuation, length, candidate order, and duplicate counts
 
 ---
 

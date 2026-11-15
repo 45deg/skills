@@ -20,7 +20,7 @@
     {
       "title": "Writing",
       "description": "Skills for editing, language quality, and clear communication.",
-      "skills": ["naturalize-japanese-prose"]
+      "skills": ["naturalize-japanese-prose", "slop-copy-detector"]
     }
   ]
 }
